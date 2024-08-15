@@ -1,6 +1,6 @@
 # Script de un Keylogger basado en lenguaje C para Lunix
 
-Este keylogger registra lsa teclas que el usuario va presionando y lo almacena en un documento txt. Puede registrar letras, números y caracteres especiales.
+Este keylogger registra las teclas que el usuario va presionando y lo almacena en un documento txt. Puede registrar letras, números y caracteres especiales.
 
 # Instrucciones de uso
 1. Descarga el archivo `keylogger.c` en la carpeta de tu preferencia. OJO, modificar la ruta de **LOGFILEPATH** a la del usuario en cuestión
