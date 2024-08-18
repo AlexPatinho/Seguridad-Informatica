@@ -134,7 +134,7 @@ char getKeyChar(int keycode, int shift, int altGr, int capsLock) {
         default: key = '\0'; break;
     }
 
-    // Manejar Shift
+    // Caracteres con Shift
     if (shift) {
         if (key >= 'a' && key <= 'z') key = key - 'a' + 'A';
         switch (keycode) {
@@ -162,7 +162,7 @@ char getKeyChar(int keycode, int shift, int altGr, int capsLock) {
         }
     }
 
-    // Manejar AltGr
+    // Caracteres con AltGr
     if (altGr) {
         switch (keycode) {
             case KEY_Q: key = '@'; break;
