@@ -2,7 +2,6 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <linux/input.h>
-#include <sys/stat.h>
 #include <string.h>
 #include <stdlib.h>
 #include <errno.h>
