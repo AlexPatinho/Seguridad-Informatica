@@ -5,7 +5,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <errno.h>
-#include <ctype.h>
 
 #define LOGFILEPATH "/home/alex/Documentos/Universidad/Seguridad_Informatica/keylogger/keylogger.txt"
 
