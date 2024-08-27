@@ -13,5 +13,5 @@ Un ejemplo de cómo una persona podría caer en este ataque sería el siguiente:
 - `Nueva vacante disponible: Gerente administrativo. 
 Para mas información consulta el siguiente link: *url del sitio falso*`
 
-3. El usuario ingresa al link de trampa e inicia sesión. Cuando el usuario da click en **Iniciar Sesión**, lo redirijirá a la página home oficial de Linkedin para hacerle creer que pudo iniciar sesión.
+2. El usuario ingresa al link de trampa e inicia sesión. Cuando el usuario da click en **Iniciar Sesión**, lo redirijirá a la página home oficial de Linkedin para hacerle creer que pudo iniciar sesión.
 
