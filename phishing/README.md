@@ -9,7 +9,7 @@ Estos archivos simulan ser la página de Login de Linkedin, la cual es un ataque
 ## Vector inicial.
 
 Un ejemplo de cómo una persona podría caer en este ataque sería el siguiente:
-1. Se le envía un correo o SMS al usuario con el mensaje de que se ha encontrado una vacante que podría ser de gran interés:
+1. Se le envía un correo o SMS al usuario con el mensaje de que se ha encontrado una vacante que podría ser de gran interés: \n
 `Nueva vacante disponible: Gerente administrativo
 Para mas información consulta el siguiente link: *url del sitio falso*`
 
